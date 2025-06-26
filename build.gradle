@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'personal.rushikesh'
-version = '1.0.1'
+version = '2.0.1'
 
 java {
 	toolchain {
@@ -28,6 +28,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.apache.poi:poi-ooxml:5.2.3'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'com.mysql:mysql-connector-j'
