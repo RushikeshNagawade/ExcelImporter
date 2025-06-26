@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'personal.rushikesh'
-version = '0.0.1-SNAPSHOT'
+version = '1.0.1'
 
 java {
 	toolchain {
@@ -27,12 +27,17 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.apache.poi:poi-ooxml:5.2.3'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+springBoot {
+	mainClass = 'personal.rushikesh.excelImporter.ExcelImporterApplication'
 }
 
 tasks.named('test') {
